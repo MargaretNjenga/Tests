@@ -1,5 +1,7 @@
 ---
 name: Feature Request 
+about: A new feature request
+title: '[Enhancement]'
 labels: enhancement
 ---
 
