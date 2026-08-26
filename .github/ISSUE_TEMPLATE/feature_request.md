@@ -1,3 +1,8 @@
+---
+name: Feature Request 
+labels: enhancement
+---
+
 ### Problem / Opportunity
 What need or gap does this address? Why now?
 
