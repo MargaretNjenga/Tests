@@ -9,7 +9,7 @@ labels: type:investigation
 What are we trying to find out, and why now?
 
 ### Data/Signal Prompting This
-What triggered this investigation? (dashboard anomaly, stakeholder question, monitoring alert)
+What triggered this investigation? (dashboard anomaly, stakeholder question, monitoring alert, helpdesk alert)
 
 ### Scope
 What's in bounds vs. explicitly out of bounds for this investigation.
