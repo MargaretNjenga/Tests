@@ -21,6 +21,7 @@ What does "done" look like — a finding, a recommendation, a decision?
 (filled in as work progresses)
 
 ### Owning Team
+(which team should pick the ticket up first)
 - [ ] Data
 - [ ] Product
 - [ ] Tech
