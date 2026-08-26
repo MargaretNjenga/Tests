@@ -13,11 +13,14 @@ What needs to be done?
 - [ ]
 
 ### Priority
-- [ ] Must have (this sprint)
-- [ ] Should have
-- [ ] Nice to have
+- [ ] P0: Showstopper
+- [ ] P1: Critical
+- [ ] P2: High
+- [ ] P3: Medium
+- [ ] P4: Low
 
 ### Owning Team
+(which team should pick the ticket up first)
 - [ ] Data
 - [ ] Product
 - [ ] Tech
