@@ -1,0 +1,57 @@
+name: Investigation
+description: Open-ended analysis or research with no known root cause yet
+title: "[Investigation] "
+labels: ["type:investigation"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question / Hypothesis
+      description: What are we trying to find out, and why now?
+    validations:
+      required: true
+
+  - type: textarea
+    id: signal
+    attributes:
+      label: Data/Signal Prompting This
+      description: What triggered this investigation? (dashboard anomaly, stakeholder question, monitoring alert)
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What's in bounds vs. explicitly out of bounds for this investigation.
+    validations:
+      required: false
+
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success Criteria
+      description: What does "done" look like — a finding, a recommendation, a decision?
+    validations:
+      required: true
+
+  - type: textarea
+    id: findings
+    attributes:
+      label: Findings
+      description: Filled in as work progresses.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: team
+    attributes:
+      label: Owning Team
+      options:
+        - Data
+        - Product
+        - Tech
+        - QA
+        - Not sure yet
+    validations:
+      required: true
