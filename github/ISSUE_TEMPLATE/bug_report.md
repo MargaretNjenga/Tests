@@ -1,4 +1,10 @@
-``` --- name: Bug Report about: Report a bug or unexpected behavior title: '[BUG] ' labels: bug --- ```
+---
+name: Bug
+Report about: Report a bug or unexpected behavior
+title: '[BUG] '
+labels: bug
+---
+
 ### Summary
 One or two sentences describing what's wrong.
 
