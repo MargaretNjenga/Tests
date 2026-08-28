@@ -23,21 +23,13 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: pipeline
+  - type: textarea
+    id: bug_description
     attributes:
-      label: 🔧 Affected Pipeline/Component
-      description: If known, select the specific pipeline or component involved
-      multiple: true
-      options:
-        - SMS delivery (RapidPro)
-        - EDD sync
-        - Message scheduling
-        - Enrollment
-        - Dashboards/reporting
-        - Other
+      label: 📝 Description
+      description: Describe the bug in 1-2 sentences.
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: bug_replicate
@@ -56,15 +48,12 @@ body:
     id: bug_expected
     attributes:
       label: ✅ Expected Behavior
-      description: What should happen.
-    validations:
-      required: true
-
-  - type: textarea
-    id: bug_actual
-    attributes:
-      label: ❌ Actual Behavior
-      description: What actually happens.
+      description: Describe how the feature should work correctly
+      placeholder: |
+        The feature should:
+        - [Expected behavior 1]
+        - [Expected behavior 2]
+        - [Expected behavior 3]
     validations:
       required: true
 
@@ -116,23 +105,11 @@ body:
     validations:
       required: false
 
-  - type: textarea
+  - type: input
     id: environment
     attributes:
-      label: 💻 Environment (if known)
-      placeholder: |
-        Browser/App version:
-        Device/OS:
-        Environment: [staging/prod/dev]
-        Build/commit:
-    validations:
-      required: false
-
-  - type: textarea
-    id: test_case
-    attributes:
-      label: 🧪 Test Case Reference (QA only, optional)
-      description: Link to the test case or test suite this came from, if applicable.
+      label: 💻 Environment
+      placeholder: "staging / dev / prod"
     validations:
       required: false
 
@@ -140,7 +117,7 @@ body:
     id: bug_extra_info
     attributes:
       label: 📋 Additional Information
-      description: Share any other relevant context, screenshots, error messages, or technical details
+      description: Share any other relevant context, screenshots, or error messages
       placeholder: |
         ### Screenshots/Videos
         [Add screenshots or screen recordings showing the bug]
