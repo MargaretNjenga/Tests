@@ -1,0 +1,167 @@
+name: Bug Report
+description: Use this template to report a bug experienced on any Jacaranda Health product
+title: "[Bug Report]: "
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this bug! 🐛
+
+        Please provide as much detail as possible to help us reproduce and fix the issue quickly.
+
+  - type: dropdown
+    id: bug_product
+    attributes:
+      label: 🎯 Affected Product
+      description: Select the product where you experienced the bug
+      options:
+        - PROMPTS
+        - MENTORS
+        - DELTA
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pipeline
+    attributes:
+      label: 🔧 Affected Pipeline/Component
+      description: If known, select the specific pipeline or component involved
+      multiple: true
+      options:
+        - SMS delivery (RapidPro)
+        - EDD sync
+        - Message scheduling
+        - Enrollment
+        - Dashboards/reporting
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: bug_replicate
+    attributes:
+      label: 🔄 Steps to Reproduce
+      description: Provide clear, step-by-step instructions to reproduce the bug
+      placeholder: |
+        1. Go to [specific page/feature]
+        2. Click on [specific element]
+        3. Enter [specific data]
+        4. Observe the bug occurs
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_expected
+    attributes:
+      label: ✅ Expected Behavior
+      description: What should happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_actual
+    attributes:
+      label: ❌ Actual Behavior
+      description: What actually happens.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 🚨 Severity
+      options:
+        - Blocker — nothing works
+        - High — major feature broken
+        - Medium — workaround exists
+        - Low — cosmetic/minor
+    validations:
+      required: true
+
+  - type: dropdown
+    id: regression
+    attributes:
+      label: ⏮️ Regression?
+      options:
+        - "Yes — worked before, broke recently"
+        - "No — new issue"
+        - Unknown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: team
+    attributes:
+      label: 👥 Owning Team
+      description: Who should triage this first? (Can be reassigned later.)
+      options:
+        - Data
+        - Product
+        - Tech
+        - QA
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: duplicate_check
+    attributes:
+      label: 🔍 Duplicate Check
+      description: Have you searched existing issues for a matching report?
+      placeholder: |
+        - [ ] I searched existing issues and didn't find a matching one
+        - [ ] Related ticket (if any): #
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 💻 Environment (if known)
+      placeholder: |
+        Browser/App version:
+        Device/OS:
+        Environment: [staging/prod/dev]
+        Build/commit:
+    validations:
+      required: false
+
+  - type: textarea
+    id: test_case
+    attributes:
+      label: 🧪 Test Case Reference (QA only, optional)
+      description: Link to the test case or test suite this came from, if applicable.
+    validations:
+      required: false
+
+  - type: textarea
+    id: bug_extra_info
+    attributes:
+      label: 📋 Additional Information
+      description: Share any other relevant context, screenshots, error messages, or technical details
+      placeholder: |
+        ### Screenshots/Videos
+        [Add screenshots or screen recordings showing the bug]
+
+        ### Error Messages
+        [Copy any error messages or console logs]
+
+        ### Additional Context
+        [When it started, who's affected, related tickets]
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **📋 Important Reminders:**
+
+        1. You are responsible for communicating updates about this bug report with the team
+        2. Keep the issue updated as progress is made
+        3. For questions, contact the Tech Team Managers, Head of Department, or Director
+
+        **Thank you for helping us improve our products! 🎉**
