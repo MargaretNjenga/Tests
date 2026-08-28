@@ -1,0 +1,112 @@
+name: Investigation
+description: Open-ended analysis or research with no known root cause yet
+title: "[Investigation]: "
+labels: ["type:investigation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for open-ended analysis or research where the root cause or outcome isn't known yet.
+
+  - type: dropdown
+    id: investigation_product
+    attributes:
+      label: 🎯 Affected Product
+      description: Select the product this investigation relates to, if applicable
+      options:
+        - PROMPTS
+        - MENTORS
+        - DELTA
+        - Other
+        - Not product-specific
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ Question / Hypothesis
+      description: What are we trying to find out, and why now?
+    validations:
+      required: true
+
+  - type: textarea
+    id: signal
+    attributes:
+      label: 📡 Data/Signal Prompting This
+      description: What triggered this investigation? (dashboard anomaly, stakeholder question, monitoring alert, helpdesk alert)
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 🔭 Scope
+      description: What's in bounds vs. explicitly out of bounds for this investigation.
+    validations:
+      required: false
+
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: ✅ Success Criteria
+      description: What does "done" look like — a finding, a recommendation, a decision?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔺 Priority
+      options:
+        - "P0: Showstopper"
+        - "P1: Critical"
+        - "P2: High"
+        - "P3: Medium"
+        - "P4: Low"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: team
+    attributes:
+      label: 👥 Owning Team
+      description: Who should pick this ticket up first? (Can be reassigned later.)
+      options:
+        - Data
+        - Product
+        - Tech
+        - QA
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: duplicate_check
+    attributes:
+      label: 🔍 Duplicate Check
+      description: Have you searched existing issues for a similar or related investigation?
+      placeholder: |
+        - [ ] I searched existing issues and didn't find a matching one
+        - [ ] Related ticket (if any): #
+    validations:
+      required: false
+
+  - type: textarea
+    id: findings
+    attributes:
+      label: 📊 Findings
+      description: Filled in as work progresses.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **📋 Important Reminders:**
+
+        1. You are responsible for communicating updates about this investigation with the team
+        2. Keep the issue updated as findings emerge, even if partial
+        3. For questions, contact the Tech Team Managers, Head of Department, or Director
