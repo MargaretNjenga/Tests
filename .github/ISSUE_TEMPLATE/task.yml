@@ -1,0 +1,98 @@
+name: Task
+description: Maintenance, chores, or general sprint work that isn't a bug, feature, or investigation
+title: "[Task]: "
+labels: ["type:task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for maintenance, chores, or general sprint work that isn't a bug, feature request, or investigation.
+
+  - type: dropdown
+    id: task_product
+    attributes:
+      label: 🎯 Affected Product
+      description: Select the product this task relates to, if applicable
+      options:
+        - PROMPTS
+        - MENTORS
+        - DELTA
+        - Other
+        - Not product-specific
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Description
+      description: What needs to be done?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: ✅ Acceptance Criteria
+      description: What should be true when this task is complete?
+      placeholder: |
+        - [ ]
+        - [ ]
+    validations:
+      required: false
+
+  - type: textarea
+    id: subtasks
+    attributes:
+      label: 🧩 Sub-tasks (if this is a parent/tracking ticket)
+      description: If this ticket groups related child tickets, list them here.
+      placeholder: |
+        - [ ] #
+        - [ ] #
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔺 Priority
+      options:
+        - "P0: Showstopper"
+        - "P1: Critical"
+        - "P2: High"
+        - "P3: Medium"
+        - "P4: Low"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: team
+    attributes:
+      label: 👥 Owning Team
+      description: Who should pick this ticket up first? (Can be reassigned later.)
+      options:
+        - Data
+        - Product
+        - Tech
+        - QA
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: related
+    attributes:
+      label: 🔗 Related Tickets/Links
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **📋 Important Reminders:**
+
+        1. You are responsible for communicating updates about this task with the team
+        2. Keep the issue updated as progress is made
+        3. For questions, contact the Tech Team Managers, Head of Department, or Director
