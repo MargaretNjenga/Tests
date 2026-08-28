@@ -47,7 +47,7 @@ body:
       label: 🎯 Proposed Solution
       description: What are we building/changing?
       placeholder: |
-        ### Problem
+        ### Proposed Solution
         [Describe the proposed solution]
 
     validations:
