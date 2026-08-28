@@ -1,40 +1,130 @@
----
-name: Feature Request
-about: Propose a new feature, data point, or enhancement
-title: '[Enhancement] '
-labels: type:feature
----
+name: Enhancement / Feature Request
+description: Use this template to request a new feature or enhancement that is not currently available in the application
+title: "[Enhancement/Feature Request]: "
+labels:
+  - type:feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to submit a new feature request! ✨
 
-### Problem / Opportunity
-What need or gap does this address? 
+        Please provide detailed information below to help us understand and prioritize this enhancement effectively.
 
-### Proposed Solution
-What are we building/changing? (Non-technical description is fine.)
+  - type: dropdown
+    id: enhancement_product
+    attributes:
+      label: 🎯 Affected Product
+      description: Select the product where you want this enhancement
+      options:
+        - PROMPTS
+        - MENTORS
+        - DELTA
+        - Other
+    validations:
+      required: true
 
-### Acceptance Criteria
-- [ ]
-- [ ]
-- [ ]
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 🎯 Use Case / Problem Statement
+      description: Clearly describe the use case or problem this feature is intended to solve
+      placeholder: |
+        ### Problem
+        [Describe the current problem or limitation]
 
-### Out of Scope
-What this ticket explicitly does NOT cover.
+        ### Use Case
+        [Describe who needs this feature and how they would use it]
 
-### Technical Notes (optional — dev fills in)
-API/DB changes, dependencies, architecture considerations.
+        ### Impact
+        [Explain the impact of solving this problem]
+    validations:
+      required: true
 
-### Priority
-- [ ] P0: Showstopper
-- [ ] P1: Critical
-- [ ] P2: High
-- [ ] P3: Medium
-- [ ] P4: Low
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: ✅ Acceptance Criteria
+      description: Define what success looks like. What should be true when this feature is complete?
+      placeholder: |
+        ### Functional Requirements
+        - [ ] [Specific requirement 1]
+        - [ ] [Specific requirement 2]
+        - [ ] [Specific requirement 3]
 
-### Owning Team
-(which team should pick the ticket up first)
-- [ ] Data
-- [ ] Product
-- [ ] Tech
-- [ ] QA
-- [ ] Not sure yet
+        ### User Experience
+        - [ ] [UX requirement 1]
+        - [ ] [UX requirement 2]
 
-### Related Tickets/Links
+        ### Success Metrics
+        - [ ] [How to measure success]
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: 🚫 Out of Scope
+      description: What this ticket explicitly does NOT cover.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔺 Priority
+      options:
+        - "P0: Showstopper"
+        - "P1: Critical"
+        - "P2: High"
+        - "P3: Medium"
+        - "P4: Low"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: team
+    attributes:
+      label: 👥 Owning Team
+      description: Who should pick this ticket up first? (Can be reassigned later.)
+      options:
+        - Data
+        - Product
+        - Tech
+        - QA
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra_info
+    attributes:
+      label: 📋 Additional Information
+      description: Share any other relevant context, references, links, or documentation
+      placeholder: |
+        ### Mockups/Wireframes
+        [Add any mockups, wireframes, or design references]
+
+        ### Technical Considerations
+        [Any technical constraints, dependencies, or implementation notes]
+
+        ### Related Issues
+        [Link to any related issues, discussions, or existing features]
+
+        ### Research/References
+        [Any research, examples from other products, or reference materials]
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **📋 Important Reminders:**
+
+        1. You are responsible for communicating updates about this feature request with the team
+        2. Keep the issue updated as progress is made
+        3. For questions, contact the project contact, Tech Team Managers, Head of Department, or Director
+
+        **Thank you for helping us improve our products! 🎉**
