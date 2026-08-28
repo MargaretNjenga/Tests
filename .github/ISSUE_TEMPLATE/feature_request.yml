@@ -28,7 +28,7 @@ body:
     id: use_case
     attributes:
       label: 🎯 Use Case / Problem Statement
-      description: Clearly describe the use case or problem this feature is intended to solve
+      description: What need or gap does this address? Why now?
       placeholder: |
         ### Problem
         [Describe the current problem or limitation]
@@ -38,6 +38,18 @@ body:
 
         ### Impact
         [Explain the impact of solving this problem]
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: 🎯 Proposed Solution
+      description: What are we building/changing?
+      placeholder: |
+        ### Problem
+        [Describe the proposed solution]
+
     validations:
       required: true
 
