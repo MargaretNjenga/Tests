@@ -8,15 +8,9 @@ body:
     attributes:
       value: |
         Thank you for taking the time to submit a new feature request! ✨
+        ✨ Give the enhancement request a clear, specific title — someone scanning the issue list should understand the request without opening it.✨
 
         Please provide detailed information below to help us understand and prioritize this enhancement effectively.
-
-  - type: markdown
-    attributes:
-      value: |
-        **Add a title**
-
-        Give the enhancement request a clear, specific title — someone scanning the issue list should understand the request without opening it.
 
   - type: dropdown
     id: enhancement_product
