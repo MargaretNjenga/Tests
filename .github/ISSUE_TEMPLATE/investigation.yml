@@ -8,6 +8,13 @@ body:
       value: |
         Use this template for open-ended analysis or research where the root cause or outcome isn't known yet.
 
+  - type: markdown
+    attributes:
+      value: |
+        **Add a title**
+
+        Give the investigation a clear, specific title — someone scanning the issue list should understand what's being investigated without opening it.
+
   - type: dropdown
     id: investigation_product
     attributes:
@@ -26,7 +33,14 @@ body:
     id: question
     attributes:
       label: ❓ Question / Hypothesis
-      description: What are we trying to find out, and why now?
+      description: |
+        What are we trying to find out, and why now? State it as a specific question or a testable hypothesis, not a vague topic.
+      value: |
+        ### Question
+        [What are we trying to find out?]
+
+        ### Why now
+        [What makes this worth investigating now?]
     validations:
       required: true
 
@@ -34,7 +48,11 @@ body:
     id: signal
     attributes:
       label: 📡 Data/Signal Prompting This
-      description: What triggered this investigation? (dashboard anomaly, stakeholder question, monitoring alert, helpdesk alert)
+      description: |
+        What triggered this investigation? e.g. dashboard anomaly, stakeholder question, monitoring alert, helpdesk ticket.
+      value: |
+        ### Trigger
+        [Dashboard anomaly, stakeholder question, monitoring alert, helpdesk ticket, etc.]
     validations:
       required: true
 
@@ -42,7 +60,14 @@ body:
     id: scope
     attributes:
       label: 🔭 Scope
-      description: What's in bounds vs. explicitly out of bounds for this investigation.
+      description: |
+        What's in bounds vs. explicitly out of bounds for this investigation.
+      placeholder: |
+        ### In scope
+        [What this investigation will look at]
+
+        ### Out of scope
+        [What this investigation will not look at]
     validations:
       required: false
 
@@ -50,7 +75,11 @@ body:
     id: success_criteria
     attributes:
       label: ✅ Success Criteria
-      description: What does "done" look like — a finding, a recommendation, a decision?
+      description: |
+        What does "done" look like — a finding, a recommendation, a decision?
+      value: |
+        ### Definition of done
+        [A finding, a recommendation, or a decision — whichever applies]
     validations:
       required: true
 
@@ -85,7 +114,8 @@ body:
     id: duplicate_check
     attributes:
       label: 🔍 Duplicate Check
-      description: Have you searched existing issues for a similar or related investigation?
+      description: |
+        Confirm you searched existing issues for a similar or related investigation. If a related ticket exists, link it.
       placeholder: |
         - [ ] I searched existing issues and didn't find a matching one
         - [ ] Related ticket (if any): #
@@ -96,7 +126,10 @@ body:
     id: findings
     attributes:
       label: 📊 Findings
-      description: Filled in as work progresses.
+      description: |
+        Filled in as work progresses — document data, conclusions, and any recommendation as they emerge.
+      placeholder: |
+        [Document findings, data points, and conclusions as the investigation progresses]
     validations:
       required: false
 
