@@ -7,6 +7,8 @@ body:
     attributes:
       value: |
         Use this template for maintenance, chores, or general sprint work that isn't a bug, feature request, or investigation.
+        
+        ✨ Give the task a clear, specific title — someone scanning the issue list should understand what needs to be done without opening it. ✨ 
 
   - type: dropdown
     id: task_product
@@ -26,7 +28,14 @@ body:
     id: description
     attributes:
       label: 📝 Description
-      description: What needs to be done?
+      description: |
+        What needs to be done, and why?
+      value: |
+        ### What needs to be done
+        [Describe the task clearly]
+
+        ### Why
+        [Context or reason this task is needed]
     validations:
       required: true
 
@@ -34,10 +43,11 @@ body:
     id: acceptance_criteria
     attributes:
       label: ✅ Acceptance Criteria
-      description: What should be true when this task is complete?
+      description: |
+        What should be true when this task is complete? List as checklist items.
       placeholder: |
-        - [ ]
-        - [ ]
+        - [ ] [Specific completion criterion 1]
+        - [ ] [Specific completion criterion 2]
     validations:
       required: false
 
@@ -45,7 +55,8 @@ body:
     id: subtasks
     attributes:
       label: 🧩 Sub-tasks (if this is a parent/tracking ticket)
-      description: If this ticket groups related child tickets, list them here.
+      description: |
+        If this ticket groups related child tickets, list them here — link each child issue.
       placeholder: |
         - [ ] #
         - [ ] #
@@ -83,6 +94,12 @@ body:
     id: related
     attributes:
       label: 🔗 Related Tickets/Links
+      description: |
+        Link any related tickets, pull requests, or documentation.
+      placeholder: |
+        - Related ticket: #
+        - Related PR: #
+        - Related doc: [link]
     validations:
       required: false
 
