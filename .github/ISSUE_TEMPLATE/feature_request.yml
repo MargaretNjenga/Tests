@@ -52,7 +52,8 @@ body:
     id: proposed_solution
     attributes:
       label: 🎯 Proposed Solution
-      description: What are we building/changing?
+      description: |
+        What are we building/changing? Describe the approach at a high level — how it works, who it affects, and any alternatives you considered.
       value: |
         ### Proposed Solution
         [Describe the proposed solution]
@@ -84,7 +85,8 @@ body:
     id: out_of_scope
     attributes:
       label: 🚫 Out of Scope
-      description: What this ticket explicitly does NOT cover.
+      description: |
+        What this ticket explicitly does NOT cover — e.g. a feature or behavior excluded from this request, or related work being tracked separately.
       placeholder: |
         - [Feature or behavior explicitly excluded from this request]
         - [Related work being tracked separately, if any]
