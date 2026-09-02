@@ -1,6 +1,8 @@
 name: Bug Report
 description: Use this template to report a bug experienced on any Jacaranda Health product
 title: "[Bug Report]: "
+description: |
+        Give the bug a clear, specific title — someone scanning the issue list should understand what's broken without opening it.
 labels: ["type:bug"]
 body:
   - type: markdown
@@ -119,7 +121,7 @@ body:
     id: environment
     attributes:
       label: 💻 Environment
-      value: "staging / dev / prod"
+      description: Staging/Dev/Prod
     validations:
       required: false
 
