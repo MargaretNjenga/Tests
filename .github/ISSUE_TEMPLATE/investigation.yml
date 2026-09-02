@@ -7,13 +7,8 @@ body:
     attributes:
       value: |
         Use this template for open-ended analysis or research where the root cause or outcome isn't known yet.
-
-  - type: markdown
-    attributes:
-      value: |
-        **Add a title**
-
-        Give the investigation a clear, specific title — someone scanning the issue list should understand what's being investigated without opening it.
+        
+        ✨ Give the investigation a clear, specific title — someone scanning the issue list should understand what's being investigated without opening it. ✨
 
   - type: dropdown
     id: investigation_product
@@ -34,7 +29,7 @@ body:
     attributes:
       label: ❓ Question / Hypothesis
       description: |
-        What are we trying to find out, and why now? State it as a specific question or a testable hypothesis, not a vague topic.
+        What are we trying to find out, and why now?
       value: |
         ### Question
         [What are we trying to find out?]
