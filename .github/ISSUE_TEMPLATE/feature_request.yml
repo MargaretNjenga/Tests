@@ -11,6 +11,13 @@ body:
 
         Please provide detailed information below to help us understand and prioritize this enhancement effectively.
 
+  - type: markdown
+    attributes:
+      value: |
+        **Add a title**
+
+        Give the enhancement request a clear, specific title — someone scanning the issue list should understand the request without opening it.
+
   - type: dropdown
     id: enhancement_product
     attributes:
@@ -29,7 +36,7 @@ body:
     attributes:
       label: 🎯 Use Case / Problem Statement
       description: What need or gap does this address? Why now?
-      placeholder: |
+      value: |
         ### Problem
         [Describe the current problem or limitation]
 
@@ -46,7 +53,7 @@ body:
     attributes:
       label: 🎯 Proposed Solution
       description: What are we building/changing?
-      placeholder: |
+      value: |
         ### Proposed Solution
         [Describe the proposed solution]
 
@@ -58,7 +65,7 @@ body:
     attributes:
       label: ✅ Acceptance Criteria
       description: Define what success looks like. What should be true when this feature is complete?
-      placeholder: |
+      value: |
         ### Functional Requirements
         - [ ] [Specific requirement 1]
         - [ ] [Specific requirement 2]
@@ -78,6 +85,9 @@ body:
     attributes:
       label: 🚫 Out of Scope
       description: What this ticket explicitly does NOT cover.
+      placeholder: |
+        - [Feature or behavior explicitly excluded from this request]
+        - [Related work being tracked separately, if any]
     validations:
       required: false
 
@@ -112,7 +122,7 @@ body:
     id: extra_info
     attributes:
       label: 📋 Additional Information
-      description: Share any other relevant context, references, links, or documentation
+      description: "Share any other relevant context such as: Mockups/Wireframes, Technical Considerations, Related Issues, Research/References etc"
       placeholder: |
         ### Mockups/Wireframes
         [Add any mockups, wireframes, or design references]
