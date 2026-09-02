@@ -6,16 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report this bug! 🐛
+        Thanks for taking the time to report this bug! 🐛. Give the bug a clear, specific title — someone scanning the issue list should understand what's broken without opening it.
 
         Please provide as much detail as possible to help us reproduce and fix the issue quickly.
-
-  - type: markdown
-    attributes:
-      value: |
-        **Add a title**
-
-        Give the bug a clear, specific title — someone scanning the issue list should understand what's broken without opening it.
 
   - type: dropdown
     id: bug_product
