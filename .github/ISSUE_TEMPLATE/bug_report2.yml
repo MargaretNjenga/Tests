@@ -27,7 +27,17 @@ body:
     id: bug_description
     attributes:
       label: 📝 Description
-      description: Describe the bug in 1-2 sentences.
+      description: |
+        Summarize the bug in 2–3 sentences: what's broken, where you noticed it, and how bad the impact is. Save exact reproduction steps for the field below.
+      value: |
+        ### What's broken
+        [One sentence on what's not working]
+
+        ### Where you noticed it
+        [Page, feature, or flow]
+
+        ### Impact
+        [Who's affected and how badly]
     validations:
       required: true
 
@@ -36,7 +46,7 @@ body:
     attributes:
       label: 🔄 Steps to Reproduce
       description: Provide clear, step-by-step instructions to reproduce the bug
-      placeholder: |
+      value: |
         1. Go to [specific page/feature]
         2. Click on [specific element]
         3. Enter [specific data]
@@ -49,7 +59,7 @@ body:
     attributes:
       label: ✅ Expected Behavior
       description: Describe how the feature should work correctly
-      placeholder: |
+      value: |
         The feature should:
         - [Expected behavior 1]
         - [Expected behavior 2]
@@ -99,7 +109,7 @@ body:
     attributes:
       label: 🔍 Duplicate Check
       description: Have you searched existing issues for a matching report?
-      placeholder: |
+      value: |
         - [ ] I searched existing issues and didn't find a matching one
         - [ ] Related ticket (if any): #
     validations:
@@ -109,7 +119,7 @@ body:
     id: environment
     attributes:
       label: 💻 Environment
-      placeholder: "staging / dev / prod"
+      value: "staging / dev / prod"
     validations:
       required: false
 
@@ -118,7 +128,7 @@ body:
     attributes:
       label: 📋 Additional Information
       description: Share any other relevant context, screenshots, or error messages
-      placeholder: |
+      value: |
         ### Screenshots/Videos
         [Add screenshots or screen recordings showing the bug]
 
