@@ -29,7 +29,7 @@ body:
     id: use_case
     attributes:
       label: 🎯 Use Case / Problem Statement
-      description: What need or gap does this address? Why now? Address the Use Case, Problem and the Impact of solving this problem.
+      description: What need or gap does this address? Why now? Address the Problem, Use Case, and the Impact of solving this problem.
       placeholder: |
         ### Problem
         [Describe the current problem or limitation]
