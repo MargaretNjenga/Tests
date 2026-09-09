@@ -29,7 +29,7 @@ body:
       label: 📝 Description
       description: |
         Summarize the bug in 2–3 sentences: what's broken, where you noticed it, and how bad the impact is. Save exact reproduction steps for the field below.
-      value: |
+      placeholder: |
         ### What's broken
         [One sentence on what's not working]
 
@@ -46,7 +46,7 @@ body:
     attributes:
       label: 🔄 Steps to Reproduce
       description: Provide clear, step-by-step instructions to reproduce the bug
-      value: |
+      placeholder: |
         1. Go to [specific page/feature]
         2. Click on [specific element]
         3. Enter [specific data]
@@ -59,7 +59,7 @@ body:
     attributes:
       label: ✅ Expected Behavior
       description: Describe how the feature should work correctly
-      value: |
+      placeholder: |
         The feature should:
         - [Expected behavior 1]
         - [Expected behavior 2]
