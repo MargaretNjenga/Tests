@@ -1,7 +1,7 @@
 name: Task
 description: Maintenance, chores, or general sprint work that isn't a bug, feature, or investigation
 title: "[Task]: "
-labels: ["type:task"]
+labels: ["type:Task"]
 body:
   - type: markdown
     attributes:
@@ -30,7 +30,7 @@ body:
       label: 📝 Description
       description: |
         What needs to be done, and why?
-      value: |
+      placeholder: |
         ### What needs to be done
         [Describe the task clearly]
 
