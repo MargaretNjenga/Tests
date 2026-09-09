@@ -1,7 +1,7 @@
 name: Investigation
 description: Open-ended analysis or research with no known root cause yet
 title: "[Investigation]: "
-labels: ["type:investigation"]
+labels: ["type:Research"]
 body:
   - type: markdown
     attributes:
@@ -30,7 +30,7 @@ body:
       label: ❓ Question / Hypothesis
       description: |
         What are we trying to find out, and why now?
-      value: |
+      placeholder: |
         ### Question
         [What are we trying to find out?]
 
@@ -45,7 +45,7 @@ body:
       label: 📡 Data/Signal Prompting This
       description: |
         What triggered this investigation? e.g. dashboard anomaly, stakeholder question, monitoring alert, helpdesk ticket.
-      value: |
+      placeholder: |
         ### Trigger
         [Dashboard anomaly, stakeholder question, monitoring alert, helpdesk ticket, etc.]
     validations:
@@ -72,7 +72,7 @@ body:
       label: ✅ Success Criteria
       description: |
         What does "done" look like — a finding, a recommendation, a decision?
-      value: |
+      placeholder: |
         ### Definition of done
         [A finding, a recommendation, or a decision — whichever applies]
     validations:
