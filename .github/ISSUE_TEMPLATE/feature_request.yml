@@ -29,7 +29,7 @@ body:
     id: use_case
     attributes:
       label: 🎯 Use Case / Problem Statement
-      description: What need or gap does this address? Why now?
+      description: What need or gap does this address? Why now? Address the Use Case, Problem and the Impact of solving this problem.
       placeholder: |
         ### Problem
         [Describe the current problem or limitation]
@@ -59,7 +59,7 @@ body:
     id: acceptance_criteria
     attributes:
       label: ✅ Acceptance Criteria
-      description: Define what success looks like. What should be true when this feature is complete?
+      description: Define what success looks like. Functional requirements, User Experience, How to measure success etc.
       placeholder: |
         ### Functional Requirements
         - [ ] [Specific requirement 1]
